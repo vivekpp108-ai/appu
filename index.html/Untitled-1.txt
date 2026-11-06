@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f3ff;
+            color: #222;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: white;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #6c3ce8;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(
+                135deg, #7045e8, #a855f7, #ec4899
+            );
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 550px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: white;
+            color: #7045e8;
+            padding: 14px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+            background: #222;
+            color: white;
+        }
+
+        .about {
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            color: #7045e8;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            nav {
+                padding: 18px;
+            }
+
+            nav a {
+                margin-left: 8px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Creative.</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Welcome to My Website</h1>
+
+        <p>
+            Discover something amazing.
+            Create your dreams and make
+            every moment beautiful.
+        </p>
+
+        <button class="btn" onclick="showMessage()">
+            Get Started →
+        </button>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            We create beautiful experiences
+            with creativity, passion and innovation.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Creative Website | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Welcome! Thanks for visiting our website.");
+        }
+    </script>
+
+</body>
+</html>
